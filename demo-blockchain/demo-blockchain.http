@@ -1,0 +1,13 @@
+﻿@demo-blockchain_HostAddress = https://localhost:7275
+
+GET {{demo-blockchain_HostAddress}}/api/document
+
+###
+
+GET {{demo-blockchain_HostAddress}}/test2
+
+###
+
+GET {{demo-blockchain_HostAddress}}/Document/GetBlock
+
+###

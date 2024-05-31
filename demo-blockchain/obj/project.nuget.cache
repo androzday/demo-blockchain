@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iQECsSERjj8eCX6v2ssM3Tbc0f9g5qf5ajIjrLiyZp1uy44WkEbem97qpak3z13WrPTfOV740kADih1T71vicA==",
+  "success": true,
+  "projectFilePath": "D:\\learn\\net\\demo-blockchain\\demo-blockchain\\demo-blockchain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ThinkPad\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

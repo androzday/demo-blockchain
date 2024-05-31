@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Verify Control";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-2">
+        <label for="fileToUpload" class="form-label">
+            Select File to Upload
+        </label>
+        <input id="fileToUpload" name="fileToUpload"
+               type="file" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label for="hashInput" class="form-label">
+            Input Hash
+        </label>
+        <input id="hashInput" name="hashInput"
+               type="text" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label for="privKeyInput" class="form-label">
+            Input Private Key
+        </label>
+        <input id="privKeyInput" name="privKeyInput"
+               type="text" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <button class="btn btn-primary">Verify</button>
+    </div>
+    <div class="mb-2">
+        <p id="result">@ViewData["result"]</p>
+    </div>
+</form>

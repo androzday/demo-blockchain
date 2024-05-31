@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "GenerateKey Control";
+}
+
+<script>
+    function copyKey(param) {
+        /* Get the text from the textbox */
+        var textBox = document.getElementById(param);
+        textBox.select();
+        document.execCommand("copy");
+
+        alert("Text copied to clipboard!");
+    }
+</script>
+
+<div>
+    <div>
+        <form method="post">
+            <div class="mb-2">
+                <label for="generateKey" class="form-label">
+                    GenerateKey
+                </label>
+
+                <button class="btn btn-primary">Generate</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <div class="mb-2">
+            <label for="resultHash" class="form-label">
+                Public Key:
+            </label>
+            <br />
+            <textarea id="pubKey" rows="4" style="width:50%">@ViewData["pubKey"]</textarea>
+            <br />
+            <button onclick="copyKey('pubKey')">Copy Public Key</button>
+        </div>
+        <div class="mb-2">
+            <label for="resultHash" class="form-label">
+                Private Key:
+            </label>
+            <br />
+            <textarea id="privKey" rows="4" style="width:50%">@ViewData["privKey"]</textarea>
+            <br />
+            <button onclick="copyKey('privKey')">Copy Public Key</button>
+        </div>
+    </div>
+</div>
+
